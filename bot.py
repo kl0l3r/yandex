@@ -2,12 +2,12 @@ import math
 import telebot
 import logging
 import functools
-from auto_token import update_config_file
-from yandex_gpt import PyYandexGpt
-from database_YaGPT import Tokens
-from database_history import History
-from database_SpeechKit import SpeechKit
-from speechkit import text_to_speech, speech_to_text
+from autoken import update_config_file
+from ya_gpy import PyYandexGpt
+from db_yagpt import Tokens
+from db_his import History
+from db_spk import SpeechKit
+from spk import text_to_speech, speech_to_text
 from config import TOKEN, WHITELISTED_USERS
 bot = telebot.TeleBot(TOKEN)
 dbt = Tokens("tokens.db")
